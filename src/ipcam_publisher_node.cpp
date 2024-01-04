@@ -31,6 +31,7 @@ IPCamPublisherNode::IPCamPublisherNode(const rclcpp::NodeOptions & options)
   timer_ = this->create_wall_timer(std::chrono::milliseconds(1000/frame_rate), std::bind(&IPCamPublisherNode::publishFrame, this));
 }
 
+
 void IPCamPublisherNode::initialize_ipcam(){
   // Open the video capture
   cap = cv::VideoCapture("http://" + cam_ip + ":8080/video");
@@ -47,6 +48,7 @@ void IPCamPublisherNode::initialize_ipcam(){
   cap.set(cv::CAP_PROP_FRAME_WIDTH, image_size_[0]);
   cap.set(cv::CAP_PROP_FRAME_HEIGHT, image_size_[1]);
 }
+
 
 void IPCamPublisherNode::publishFrame(){
   cv::Mat frame;
@@ -79,6 +81,8 @@ void IPCamPublisherNode::publishFrame(){
     this->initialize_ipcam();
   }
 }
+
+
 
 int main(int argc, char ** argv)
 {

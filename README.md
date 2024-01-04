@@ -31,3 +31,8 @@ ros2 launch ros2_ipcamera_publisher ipcam.launch.py
 | camera_ip | string | "" |
 | image_size | vector<int64_t>> | [1280, 720] |
 | frame_rate | int64_t | 100 | 
+
+
+### App for Smart Phones to stream video:
+- Android: IP Webcam
+
