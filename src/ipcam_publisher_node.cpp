@@ -8,7 +8,7 @@ IPCamPublisherNode::IPCamPublisherNode(const rclcpp::NodeOptions & options)
   publishing_frames = false;
 
   // Get ROS params
-  this->declare_parameter("camera_ip", std::string("192.168.178.24"));
+  this->declare_parameter("camera_ip", std::string(""));
   this->declare_parameter<std::vector<int64_t>>("image_size", {640, 480});
   this->declare_parameter<std::int64_t>("frame_rate", 100);
 
