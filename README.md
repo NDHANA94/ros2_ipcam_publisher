@@ -19,7 +19,7 @@ ros2 run ros2_ipcam_publisher ipcam_publisher --ros-args -p camera_ip:="<CAMERA 
 ### Launch
 - Use `config/params.yaml` file to configure camera IP address and other parameters.
 - Do `colocn build` again
-- The run launch file
+- Then run launch file
 ```
 ros2 launch ros2_ipcamera_publisher ipcam.launch.py
 ```
