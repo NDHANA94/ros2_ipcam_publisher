@@ -1,0 +1,7 @@
+# params.yaml
+
+ipcam_publisher_node:
+  ros__parameters:
+    camera_ip: "192.168.178.24"
+    image_size: [1280, 720] # 640 480
+    frame_rate: 100 # frames/sec
