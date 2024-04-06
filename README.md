@@ -9,6 +9,7 @@ git clone https://github.com/NDHANA94/ros2_ipcam_publisher.git
 
 cd ~/ros2_ws
 colcon build --symlink-install
+source install/setup.sh
 ```
 
 ### Run
